@@ -1,0 +1,79 @@
+/* Custom styles for gaming portfolio */
+
+/* Custom colors */
+:root {
+    --gaming-neon: #39ff14;
+    --gaming-purple: #9b4dff;
+    --gaming-blue: #00ffff;
+    --gaming-dark: #1a1a1a;
+}
+
+/* Glowing text effect */
+.glow-text {
+    text-shadow: 0 0 10px var(--gaming-neon),
+                 0 0 20px var(--gaming-neon),
+                 0 0 30px var(--gaming-neon);
+}
+
+/* Custom button styles */
+.btn-gaming {
+    background: linear-gradient(45deg, var(--gaming-purple), var(--gaming-blue));
+    border: 2px solid var(--gaming-neon);
+    color: white;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.btn-gaming:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px var(--gaming-neon);
+}
+
+/* Custom card styles */
+.gaming-card {
+    background: var(--gaming-dark);
+    border: 1px solid var(--gaming-neon);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px 0;
+}
+
+.gaming-card:hover {
+    box-shadow: 0 0 20px var(--gaming-purple);
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
+
+/* Custom section backgrounds */
+.gaming-gradient-bg {
+    background: linear-gradient(120deg, var(--gaming-dark), #000);
+}
+
+/* Custom animations */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.pulse-animation {
+    animation: pulse 2s infinite;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--gaming-dark);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--gaming-purple);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--gaming-neon);
+}
